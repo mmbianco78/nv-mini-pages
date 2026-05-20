@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>mini2 system health</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         max-width: 1080px; margin: 32px auto; padding: 0 24px; color: #222; }
+  h1 { margin-bottom: 4px; }
+  table tr td { padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .meta { color: #666; font-size: 13px; margin-bottom: 24px; }
+</style>
+</head><body>
+<h1>mini2 — system health</h1>
+<div class="meta">snapshot: <code>2026-05-20T19:22:25.843591-04:00</code> · rendered: <code>2026-05-20T23:23:11.518276Z</code> · 26 metrics</div>
+<section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>brew_services</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>brew_services</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>Name          Status User        File
+atuin         none                        
+cloudflared   none                        
+postgresql@16 none                        
+postgresql@18 started         marcobiacno ~/Library/LaunchAgents/homebrew.mxcl.postgresql@18.plist
+tailscale     none            root        
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>disk_usage</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>disk:/</td><td>2.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;2%&quot;,
+  &quot;size&quot;: &quot;926Gi&quot;,
+  &quot;used&quot;: &quot;12Gi&quot;,
+  &quot;avail&quot;: &quot;854Gi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk3s1s1&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/dev</td><td>100.0%</td><td><span style="background:#dc2626;color:white;padding:2px 8px;border-radius:4px;font-size:12px">critical</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;100%&quot;,
+  &quot;size&quot;: &quot;219Ki&quot;,
+  &quot;used&quot;: &quot;219Ki&quot;,
+  &quot;avail&quot;: &quot;0Bi&quot;,
+  &quot;filesystem&quot;: &quot;devfs&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/Data</td><td>6.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;6%&quot;,
+  &quot;size&quot;: &quot;926Gi&quot;,
+  &quot;used&quot;: &quot;51Gi&quot;,
+  &quot;avail&quot;: &quot;854Gi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk3s5&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/Hardware</td><td>1.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;1%&quot;,
+  &quot;size&quot;: &quot;500Mi&quot;,
+  &quot;used&quot;: &quot;548Ki&quot;,
+  &quot;avail&quot;: &quot;483Mi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk1s3&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/iSCPreboot</td><td>2.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;2%&quot;,
+  &quot;size&quot;: &quot;500Mi&quot;,
+  &quot;used&quot;: &quot;6.0Mi&quot;,
+  &quot;avail&quot;: &quot;483Mi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk1s1&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/Preboot</td><td>1.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;1%&quot;,
+  &quot;size&quot;: &quot;926Gi&quot;,
+  &quot;used&quot;: &quot;8.4Gi&quot;,
+  &quot;avail&quot;: &quot;854Gi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk3s2&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/Update</td><td>1.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;1%&quot;,
+  &quot;size&quot;: &quot;926Gi&quot;,
+  &quot;used&quot;: &quot;6.9Mi&quot;,
+  &quot;avail&quot;: &quot;854Gi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk3s4&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/VM</td><td>1.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;1%&quot;,
+  &quot;size&quot;: &quot;926Gi&quot;,
+  &quot;used&quot;: &quot;20Ki&quot;,
+  &quot;avail&quot;: &quot;854Gi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk3s6&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/System/Volumes/xarts</td><td>2.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;2%&quot;,
+  &quot;size&quot;: &quot;500Mi&quot;,
+  &quot;used&quot;: &quot;6.0Mi&quot;,
+  &quot;avail&quot;: &quot;483Mi&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk1s2&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/Volumes/THE_VAULT</td><td>1.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;1%&quot;,
+  &quot;size&quot;: &quot;44Ti&quot;,
+  &quot;used&quot;: &quot;8.5Gi&quot;,
+  &quot;avail&quot;: &quot;44Ti&quot;,
+  &quot;filesystem&quot;: &quot;/dev/disk10&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>disk:/Volumes/UGREEN-Work</td><td>1.0%</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;cap&quot;: &quot;1%&quot;,
+  &quot;size&quot;: &quot;7.2Ti&quot;,
+  &quot;used&quot;: &quot;2.9Gi&quot;,
+  &quot;avail&quot;: &quot;7.2Ti&quot;,
+  &quot;filesystem&quot;: &quot;169.254.20.1:/volume1/work&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>hostname</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>hostname</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>Marcos-Mac-mini.local
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>loadavg</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>loadavg</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>{ 3.95 3.45 3.01 }
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>mounts</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>mounts</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>/dev/disk3s1s1 on / (apfs, sealed, local, read-only, journaled)
+devfs on /dev (devfs, local, nobrowse)
+/dev/disk3s6 on /System/Volumes/VM (apfs, local, noexec, journaled, noatime, nobrowse)
+/dev/disk3s2 on /System/Volumes/Preboot (apfs, local, journaled, nobrowse)
+/dev/disk3s4 on /System/Volumes/Update (apfs, local, journaled, nobrowse)
+/dev/disk1s2 on /System/Volumes/xarts (apfs, local, noexec, journaled, noatime, nobrowse)
+/dev/disk1s1 on /System/Volumes/iSCPreboot (apfs, local, journaled, nob</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>network_interfaces</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>iface:bridge0</td><td>169.254.118.180</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">up</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;mtu&quot;: 9000,
+  &quot;inet&quot;: &quot;169.254.118.180&quot;,
+  &quot;name&quot;: &quot;bridge0&quot;,
+  &quot;flags&quot;: &quot;UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>iface:en1</td><td>192.168.1.106</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">up</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;mtu&quot;: 1500,
+  &quot;inet&quot;: &quot;192.168.1.106&quot;,
+  &quot;name&quot;: &quot;en1&quot;,
+  &quot;flags&quot;: &quot;UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>iface:en8</td><td>192.168.1.78</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">up</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;mtu&quot;: 1500,
+  &quot;inet&quot;: &quot;192.168.1.78&quot;,
+  &quot;name&quot;: &quot;en8&quot;,
+  &quot;flags&quot;: &quot;UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>iface:lo0</td><td>127.0.0.1</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">up</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;mtu&quot;: 16384,
+  &quot;inet&quot;: &quot;127.0.0.1&quot;,
+  &quot;name&quot;: &quot;lo0&quot;,
+  &quot;flags&quot;: &quot;UP,LOOPBACK,RUNNING,MULTICAST&quot;
+}</pre></details></td></tr><tr><td style='font-family:monospace;font-size:13px'>iface:utun0</td><td>100.112.1.26</td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">up</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;mtu&quot;: 1280,
+  &quot;inet&quot;: &quot;100.112.1.26&quot;,
+  &quot;name&quot;: &quot;utun0&quot;,
+  &quot;flags&quot;: &quot;UP,POINTOPOINT,RUNNING,MULTICAST&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>pmset</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>pmset</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>System-wide power settings:
+ SleepDisabled		1
+Currently in use:
+ standby              0
+ Sleep On Power Button 1
+ autorestartatconnect 0
+ autorestart          0
+ SleepServices        0
+ powernap             0
+ networkoversleep     0
+ disksleep            0
+ sleep                0 (sleep prevented by nsurlsessiond, nsurlsessiond, nsurlsessiond, nsurlsessiond)
+ ttyskeepawake        1
+ displaysleep         10
+ tcpkeepalive         1
+ lowpowermode         0
+ womp                 1
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>softraid_status</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>softraid_status</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>
+SoftRAID Tool version: 8.6.1, SoftRAID driver version: 8.6
+
+No problems found with any SoftRAID disks or volumes.
+
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>tailscale_ip</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>tailscale_ip</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>100.112.1.26
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>tailscale_status</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>tailscale_status</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>100.112.1.26    marcos-mac-mini-3                mmbianco78@  macOS  -                                                                                   
+100.93.30.67    gl-mt3000                        mmbianco78@  linux  offline, last seen 57d ago                                                          
+100.71.243.14   iphone-15-pro-max                mmbianco78@  iOS    offline, last seen 75d ago                                                          
+100.110.24.24   macbook-pro           </pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>uname</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>uname</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>Darwin Marcos-Mac-mini.local 25.5.0 Darwin Kernel Version 25.5.0: Mon Apr 27 20:41:26 PDT 2026; root:xnu-12377.121.6~2/RELEASE_ARM64_T8132 arm64
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>uptime</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>uptime</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>19:22  up  1:32, 3 users, load averages: 3.95 3.44 3.01
+</pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
+  &quot;rc&quot;: 0,
+  &quot;stderr&quot;: &quot;&quot;
+}</pre></details></td></tr></tbody></table></section>
+<footer style="margin-top:48px;color:#888;font-size:12px;border-top:1px solid #eee;padding-top:16px">
+  generated by <code>pursuit:system-health-check</code> · nv-mini · nv-base 0.1.0
+</footer>
+</body></html>
