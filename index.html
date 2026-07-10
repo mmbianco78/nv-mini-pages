@@ -11,7 +11,7 @@
 </style>
 </head><body>
 <h1>mini2 — system health</h1>
-<div class="meta">snapshot: <code>2026-07-09T22:00:04.466931+00:00</code> · rendered: <code>2026-07-09T22:00:12.615306Z</code> · 17 metrics</div>
+<div class="meta">snapshot: <code>2026-07-10T04:00:00.992606+00:00</code> · rendered: <code>2026-07-10T04:00:09.781766Z</code> · 17 metrics</div>
 <section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>brew_services</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>brew_services</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>Name          Status User        File
 atuin         none                        
 cloudflared   none                        
@@ -44,7 +44,7 @@ tailscale     started         root        ~/Library/LaunchAgents/homebrew.mxcl.t
 </pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
   &quot;rc&quot;: 0,
   &quot;stderr&quot;: &quot;&quot;
-}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>loadavg</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>loadavg</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>{ 1.70 1.78 1.82 }
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>loadavg</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>loadavg</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>{ 1.54 1.75 1.78 }
 </pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
   &quot;rc&quot;: 0,
   &quot;stderr&quot;: &quot;&quot;
@@ -88,7 +88,7 @@ Currently in use:
  powernap             0
  networkoversleep     0
  disksleep            0
- sleep                0
+ sleep                0 (sleep prevented by mds_stores)
  ttyskeepawake        1
  displaysleep         10
  tcpkeepalive         1
@@ -119,7 +119,7 @@ No problems found with any SoftRAID disks or volumes.
 </pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
   &quot;rc&quot;: 0,
   &quot;stderr&quot;: &quot;&quot;
-}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>uptime</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>uptime</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'>18:00  up 26 days, 16:17, 1 user, load averages: 1.70 1.78 1.82
+}</pre></details></td></tr></tbody></table></section><section style='margin:32px 0'><h2 style='border-bottom:1px solid #ddd;padding-bottom:6px'>uptime</h2><table style='width:100%;border-collapse:collapse'><thead><tr><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>metric</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>value</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'>status</th><th style='text-align:left;padding:6px 8px;color:#666;font-size:12px;font-weight:600'></th></tr></thead><tbody><tr><td style='font-family:monospace;font-size:13px'>uptime</td><td><pre style='font-size:11px;background:#f5f5f5;padding:4px;margin:0;overflow:auto;max-height:120px;white-space:pre-wrap'> 0:00  up 26 days, 22:17, 1 user, load averages: 1.54 1.75 1.78
 </pre></td><td><span style="background:#16a34a;color:white;padding:2px 8px;border-radius:4px;font-size:12px">ok</span></td><td><details><summary style='cursor:pointer;color:#666;font-size:12px'>details</summary><pre style='font-size:11px;background:#f5f5f5;padding:8px;overflow:auto;max-height:200px'>{
   &quot;rc&quot;: 0,
   &quot;stderr&quot;: &quot;&quot;
